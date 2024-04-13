@@ -8,11 +8,11 @@
 .main-container
 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
     width: 95%;
-    grid-gap: 6em;;
+    grid-gap:6em;
     margin: auto auto;
-    
+   
    
     
 }
@@ -21,7 +21,9 @@
 {
     width: 400px;
     height: 550px;
-    background-color: #074173;
+    background-color: #003C43;
+    padding-left: 40px;
+    padding-top: 20px;
   
 
 }
@@ -30,16 +32,58 @@
 {
     width: 450px;
     height: 550px;
-    background-color:  #074173;
+    
+    background-color:  #003C43;
    
    
 }
 
 .box-3
 {
+    width: 350px;
+    height: 430px;
+    background-color:  #003C43;
+    margin-top: 120px;
+     
+}
+.playlist
+{
     width: 400px;
-    height: 550px;
-    background-color:  #074173;
-   
+    height: 100px;
+    background-color: red;
+    
+    margin-left: 1080px;
+    margin-top: -550px;
     
 }
+
+.genre 
+{
+    display: inline-flex;
+    color:bisque ;
+   
+}
+
+#dropdown
+{
+    display: inline-flex;
+    margin-left: 20px;
+   
+}
+
+.navbar-nav
+{
+    background-color: bisque;
+}
+
+.dropdown-menu li 
+{
+    background-color: bisque;
+    
+}
+
+.dropdown-menu
+{
+  padding: 0rem;
+}
+
