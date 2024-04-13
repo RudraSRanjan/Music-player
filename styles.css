@@ -1,3 +1,45 @@
-h1{
-    color: red;
+.heading h2
+{
+    margin-top: 10%;;
+    text-align: center;
+
+}
+
+.main-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    width: 95%;
+    grid-gap: 6em;;
+    margin: auto auto;
+    
+   
+    
+}
+
+.box-1
+{
+    width: 400px;
+    height: 550px;
+    background-color: #074173;
+  
+
+}
+
+.box-2
+{
+    width: 450px;
+    height: 550px;
+    background-color:  #074173;
+   
+   
+}
+
+.box-3
+{
+    width: 400px;
+    height: 550px;
+    background-color:  #074173;
+   
+    
 }
