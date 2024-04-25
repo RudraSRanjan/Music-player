@@ -78,26 +78,58 @@
 {
   width: 360px;
   height: 400px;   
-  background: linear-gradient(to bottom right,#D875C7,#6AD4DD,#FF8080);
+  background: linear-gradient(to bottom right,#D875C7,#FF9800);
   margin: auto;
-  display: flex;
-  align-items: center;
+ 
   margin-top: 30px;
   border-radius: 20px 20px 20px 20px;
   
 }
 
-.img-ele
+.card-elements
 {
-    width: 100px;
-    height: 100px;
+    width: 300px;
 }
 
-.img-ele img
+ .img-ele 
 {
-    width: 100%;
-    height: 100%;
+    width: 330px;
+    height: 200px;
+    display: block;
+    align-items: center;
+     margin-top: 20px; 
+     margin-left: 15px; 
+    border: solid black;
+    position: absolute;
+} 
+
+.name-ele 
+{
+    
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    position: absolute;
+    margin-top: 235px;
+    margin-left: 15px;
+    font-weight:1000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    
 }
+
+.artist-ele
+{
+   
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 15px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
 
 
 .box-3
