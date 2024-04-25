@@ -41,9 +41,11 @@
     margin-top: 100px;;
 }
 
-.song-container h4
+#main-songs h4
 {
     margin-bottom: 30px;
+    margin-top: 50px;
+    color: bisque;
 }
 
 .songs-btn
@@ -56,7 +58,7 @@
     background-color: #97E7E1;
 }
 
-.song-container button:hover
+.songs-btn:hover
 {
   background-color: #8B93FF;
 }
@@ -84,7 +86,7 @@
     border-radius: 20px 20px 20px 20px;
      
 }
-.playlist
+#playlist
 {
     width: 400px;
     height: 100px; 
@@ -109,7 +111,7 @@
 
 }
 
-.playlist-name
+#playlist-name
 {
     padding: 10px;
     box-shadow: 5px 5px 5px #86469C ;
@@ -117,26 +119,26 @@
     width: 200px;
 }
 
-.create-playlist
+#create-playlist
 {
     margin-left: 20px;
     background-color: #E59BE9;
     color: #49243E;
 }
 
-.create-playlist:hover
+#create-playlist:hover
 {
     background-color: #912BBC;
     color: bisque;
 }
 
-.current-playlist h4
+#current-playlist h4
 {
     color: bisque;
     
 }
 
-.all-playlists h4
+#all-playlists h4
 {
     color: bisque;
 }

@@ -22,16 +22,20 @@
     <div class="main-container">
         <div class="box-1">
             <p class="genre"> Filter By Genre: </p>
-            <select class="select">
+            <select class="select" onchange="rockFunction(event)">
               <option value="All" >ALL</option>
-              <option value="Rock" onselect="rockFunction()">ROCK</option>
+              <option value="Rock" >ROCK</option>
               <option value="Pop">POP</option>
               <option value="Hip-Hop">HIP-HOP</option>
             </select>
-              <div class="song-container">
-                <h4>All Songs</h4>
+            <div id="main-songs">
+              <h4>All Songs</h4>
+              <div id="song-container">
+                
                 
               </div>
+            </div>
+              
 
               
         </div>
@@ -43,11 +47,11 @@
         
 
         <div class="box-3">
-            <div class="current-playlist">
+            <div id="current-playlist">
                 <h4>Current Playlist</h4>
             </div>
 
-            <div class="all-playlists">
+            <div id="all-playlists">
                 <h4>All Playlists</h4>
 
             </div>
@@ -57,9 +61,9 @@
 
      
 
- <div class="playlist">
-    <input type="text" class="playlist-name" placeholder="Enter Playlist Name">
-    <button type="submit" class="create-playlist">Create Playlist</button> 
+ <div id="playlist">
+    <input type="text" id="playlist-name" placeholder="Enter Playlist Name">
+    <button type="submit" id="create-playlist">Create Playlist</button> 
 
  </div>
 

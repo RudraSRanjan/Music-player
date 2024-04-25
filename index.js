@@ -49,19 +49,62 @@ const songs=[
     }
 ]
 
+//Box-1
 const allSongs= document.getElementsByClassName("all");
 const rockSongs= document.getElementsByClassName("rock");
 const popSongs= document.getElementsByClassName("pop");
 const hiphop= document.getElementsByClassName("hip-hop");
+const songContainer= document.getElementById("song-container");
 
-const songContainer= document.getElementsByClassName("song-container");
+
+//Box-3
+const playlistName= document.getElementById("playlist-name");
+const playlistBtn= document.getElementById("create-playlist");
+const current= document.getElementById("current-playlist");
+const allPlaylist= document.getElementById("all-playlists");
 
 
-function rockFunction()
+
+
+
+function rockFunction(e)
+{   songContainer.innerHTML="";
+    
+    const filtered= songs.filter((song)=>
+{   
+    if(e.target.value=="All")
+    {
+        return true;
+    }
+    return song.genre==e.target.value;
+});
+   filtered.forEach((song)=>
+{
+    
+    const btn= document.createElement("button");
+    btn.classList.add("songs-btn");
+    btn.textContent=`${song.name}-${song.artist}`;
+    songContainer.appendChild(btn);
+});
+    
+   
+}
+songs.forEach((song)=>
+{
+    
+    const btn= document.createElement("button");
+    btn.classList.add("songs-btn");
+    btn.textContent=`${song.name}-${song.artist}`;
+    songContainer.appendChild(btn);
+});
+
+
+//Playlist Creation 
+playlistBtn.addEventListener("click",()=>
 {
     const btn= document.createElement("button");
     btn.classList.add("songs-btn");
-    btn.textContent=`${songs.name}-${songs.artist}`;
-    songContainer.appendChild(btn);
-    
-}
+    btn.textContent=playlistName.value;
+    playlistName.value="";
+    allPlaylist.appendChild(btn);
+});
