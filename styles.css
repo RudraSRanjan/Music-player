@@ -2,13 +2,18 @@
 {
     margin-top: 10%;;
     text-align: center;
+    margin-bottom: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
 
 }
+
+
 
 .main-container
 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr ; 
     width: 95%;
     grid-gap:6em;
     margin: auto auto;
@@ -24,16 +29,45 @@
     background-color: #003C43;
     padding-left: 40px;
     padding-top: 20px;
+    box-shadow: -5px -5px 2px #49243E;
+    border-radius: 20px 20px 20px 20px;
   
 
+}
+
+.song-container
+{
+    color: bisque;
+    margin-top: 100px;;
+}
+
+.song-container h4
+{
+    margin-bottom: 30px;
+}
+
+.songs-btn
+{
+    display: block;
+    width: 250px;
+    text-align: left;
+    margin-bottom: 15px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #97E7E1;
+}
+
+.song-container button:hover
+{
+  background-color: #8B93FF;
 }
 
 .box-2
 {
     width: 450px;
     height: 550px;
-    
+    box-shadow: -5px -5px 2px #49243E;
     background-color:  #003C43;
+    border-radius: 20px 20px 20px 20px;
    
    
 }
@@ -41,17 +75,19 @@
 .box-3
 {
     width: 350px;
-    height: 450px;
+    height: 470px;
+    padding-left: 40px;
+    padding-top: 20px;
     background-color:  #003C43;
-    margin-top: 100px;
+    margin-top: 80px;
+    box-shadow: -5px -5px 2px #49243E;
+    border-radius: 20px 20px 20px 20px;
      
 }
 .playlist
 {
     width: 400px;
-    height: 100px;
-   
-    
+    height: 100px; 
     margin-left: 1080px;
     margin-top: -550px;
     
@@ -64,27 +100,13 @@
    
 }
 
-#dropdown
+.select
 {
-    display: inline-flex;
-    margin-left: 20px;
-   
-}
-
-.navbar-nav
-{
+    padding: 5px;
+    width: 140px;
     background-color: bisque;
-}
+    margin-left: 10px;
 
-.dropdown-menu li 
-{
-    background-color: bisque;
-    
-}
-
-.dropdown-menu
-{
-  padding: 0rem;
 }
 
 .playlist-name
@@ -93,4 +115,28 @@
     box-shadow: 5px 5px 5px #86469C ;
     border: 2px solid maroon;
     width: 200px;
+}
+
+.create-playlist
+{
+    margin-left: 20px;
+    background-color: #E59BE9;
+    color: #49243E;
+}
+
+.create-playlist:hover
+{
+    background-color: #912BBC;
+    color: bisque;
+}
+
+.current-playlist h4
+{
+    color: bisque;
+    
+}
+
+.all-playlists h4
+{
+    color: bisque;
 }
