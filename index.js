@@ -65,6 +65,8 @@ const allPlaylist= document.getElementById("all-playlists");
 
 const cardDiv= document.getElementById("card-container");
 
+const box2= document.getElementById("box-2");
+
 
 
 
@@ -131,12 +133,36 @@ songs.forEach((song)=>
 });
 
 
-//Playlist Creation 
-playlistBtn.addEventListener("click",()=>
-{
-    const btn= document.createElement("button");
+
+
+
+//Playlist Creation
+
+        
+if (playlistName.value === "") {
+    playlistBtn.disabled = true;
+} else {
+    playlistBtn.disabled = false;
+}
+
+playlistBtn.addEventListener("click", () => {
+    const btn = document.createElement("button");
     btn.classList.add("songs-btn");
-    btn.textContent=playlistName.value;
-    playlistName.value="";
+    btn.textContent = playlistName.value;
+    playlistName.value = "";
     allPlaylist.appendChild(btn);
+});
+                
+           
+    
+
+
+
+//Toggler Button
+ const checkbox= document.getElementById("checkbox");
+
+ checkbox.addEventListener('change',()=>
+{
+    //change the theme of website
+    document.body.classList.toggle('dark');
 });
