@@ -208,7 +208,7 @@ body.dark .box-3
   height: 400px;   
   background: linear-gradient(to bottom right,#D875C7,#FF9800);
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-top: 30px;
   border-radius: 20px 20px 20px 20px;
   
@@ -216,7 +216,7 @@ body.dark .box-3
 
 .card-elements
 {
-    width: 300px;
+    width: 350px;
 }
 
  .img-ele 
@@ -257,9 +257,9 @@ body.dark .box-3
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.bottom
+/* .bottom
 {
-    position:relative;
+    position:sticky;
     height: 70px;
     width:420px;
     background-color: #fff;
@@ -270,8 +270,18 @@ body.dark .box-3
     justify-content: center;
     flex-direction: column;
     
+} */
+
+#play-audio
+{
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: auto;
+   
 }
-.icons
+/* .icons
 {
     margin-top: 10px;
 
@@ -284,10 +294,11 @@ body.dark .box-3
 {
     /* -webkit-appearance: none;
     appearance: none; */
-    accent-color: #0A6847;
+    /* accent-color: #0A6847;
     width: 200px;
+    cursor: pointer;
     
-}
+} */ 
 
 
 

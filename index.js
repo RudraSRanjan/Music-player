@@ -112,6 +112,11 @@ function rockFunction(e)
     artistName.classList.add("artist-ele");
     artistName.textContent=song.artist;
 
+    const audio= document.getElementById("play-audio");
+    
+    audio.src=song.audio;
+    box2.appendChild(audio);
+
     cardDiv.appendChild(division);
      cardDiv.appendChild(image);
     cardDiv.appendChild(songName);
