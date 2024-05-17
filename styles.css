@@ -152,7 +152,7 @@ body.dark .box-3
 
 .box-1
 {
-    width: 400px;
+    max-width: 400px;
     height: 550px;
     background-color: #003C43;
     padding-left: 40px;
@@ -193,7 +193,7 @@ body.dark .box-3
 
 #box-2
 {
-    width: 450px;
+    max-width: 450px;
     height: 650px;
     box-shadow: -5px -5px 2px #49243E;
     background-color:  #003C43;
@@ -300,11 +300,60 @@ body.dark .box-3
     
 } */ 
 
+#controllers
+{
+    max-width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 40px;
+}
 
+.fa-2xl:hover
+{
+    cursor: pointer;
+}
+
+#playlist-adder
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#add-to
+{
+    border-radius: 10px 10px 10px 10px ;
+    padding: 10px 30px 10px 30px;
+    background: linear-gradient(to bottom right,#5DEBD7,#C5FF95);
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+#add-to:hover
+{
+    background:linear-gradient(to right,#5BBCFF,#FFC470);
+}
+
+body.dark #add-to
+{
+    background: linear-gradient(to right,#9AC8CD,#E4C59E);
+    
+}  
+
+body.dark #add-to:hover
+{
+    background: linear-gradient(to right, #5BBCFF,#77B0AA);
+}
 
 .box-3
 {
-    width: 350px;
+    max-width: 350px;
     height: 470px;
     padding-left: 40px;
     padding-top: 20px;
