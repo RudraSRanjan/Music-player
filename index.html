@@ -39,6 +39,15 @@
 
     <div class="main-container">
         <div class="box-1">
+            <div id="search">
+                
+                <div id="songSearchBar">
+                    <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #051633;"></i>
+                    <label for="text"></label>
+                    <input type="text" name="text" id="textSearchSong" required placeholder="Search Song">
+                    <button id="searchSong">Search</button>
+                </div>
+            </div>
             <p class="genre"> Filter By Genre: </p>
             <select class="select" onchange="rockFunction(event)">
               <option value="All" >ALL</option>
@@ -81,8 +90,22 @@
         
 
         <div class="box-3">
+            <div id="search">
+                
+                <div id="songSearchBar">
+                    <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #051633;"></i>
+                    <label for="text"></label>
+                    <input type="text" name="text" id="textSearchSong" required placeholder="Search Song">
+                    <button id="searchSong">Search</button>
+                </div>
+            </div>
+
+
             <div id="current-playlist">
                 <h4>Current Playlist</h4>
+                <div id="playlist-songs">
+
+                </div>
             </div>
 
             <div id="all-playlists">

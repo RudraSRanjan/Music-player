@@ -153,7 +153,7 @@ body.dark .box-3
 .box-1
 {
     max-width: 400px;
-    height: 550px;
+    height: auto;
     background-color: #003C43;
     padding-left: 40px;
     padding-top: 20px;
@@ -161,6 +161,57 @@ body.dark .box-3
     border-radius: 20px 20px 20px 20px;
   
 
+}
+
+#search
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:350px ;
+}
+
+#textSearchSong
+{
+    padding: 10px 10px 10px 60px;
+    box-shadow: 5px 5px 5px #86469C ;
+    border: 2px solid maroon;
+    width: 220px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    margin-left: -50px;
+    margin-right: 20px;
+    
+}
+
+#songSearchBar input
+{
+  background-color: #E59BE9;
+  
+}
+
+#songSearchBar i
+{
+    position: relative;
+   
+}
+
+#songSearchBar input::placeholder
+{
+    color: #000;
+    font-weight: 400;
+}
+
+#searchSong
+{
+    margin-left: 1px;
+    background-color: #E59BE9;
+    color: #49243E;
+    width: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    
 }
 
 .song-container
@@ -281,24 +332,7 @@ body.dark .box-3
    margin: auto;
    
 }
-/* .icons
-{
-    margin-top: 10px;
 
-}
-.icons i{
-    cursor: pointer;
-}
-
-#myProgressBar
-{
-    /* -webkit-appearance: none;
-    appearance: none; */
-    /* accent-color: #0A6847;
-    width: 200px;
-    cursor: pointer;
-    
-} */ 
 
 #controllers
 {
@@ -353,7 +387,7 @@ body.dark #add-to:hover
 
 .box-3
 {
-    max-width: 350px;
+    max-width: 400px;
     height: 470px;
     padding-left: 40px;
     padding-top: 20px;
@@ -363,6 +397,18 @@ body.dark #add-to:hover
     border-radius: 20px 20px 20px 20px;
      
 }
+
+#playlist-songs
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17vw;
+    height: auto;
+    
+    
+}
+
 #playlist
 {
     width: 400px;
@@ -413,7 +459,10 @@ body.dark #add-to:hover
 {
     color: bisque;
     
+    
 }
+
+
 
 #all-playlists h4
 {

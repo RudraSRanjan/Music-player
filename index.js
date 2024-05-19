@@ -218,3 +218,44 @@ next.addEventListener('click',()=>
         }    
         renderSong(songs[index]);
 })
+
+
+//Searching Song 
+
+const searchInput= document.getElementById("textSearchSong");
+const searchBtn= document.getElementById("searchSong");
+
+function Search()
+{
+    const searchValue= searchInput.value.toLowerCase();
+    const filteredSongs = songs.filter(
+        (song) =>
+          song.name.toLowerCase().includes(searchValue)
+      );
+
+
+      songContainer.innerHTML="";
+
+
+      filteredSongs.forEach((song)=>
+        {
+            
+            CardBtn= document.createElement("button");
+            CardBtn.classList.add("songs-btn");
+            CardBtn.textContent=`${song.name}-${song.artist}`;
+            songContainer.appendChild(CardBtn);
+            
+        
+            CardBtn.addEventListener('click',()=>renderSong(song));
+        
+            
+        
+        
+        });
+
+        searchInput.value="";
+         
+         
+}
+
+searchBtn.addEventListener('click',Search);
